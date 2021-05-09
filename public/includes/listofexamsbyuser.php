@@ -18,6 +18,9 @@ include_once 'header.php';
 ?>
 <div class="container-fluid col-md-10"> 
 
+<div class="d-flex justify-content-start mb-4 mx-6 col-md-6">
+        <a href="javascript:history.back()" class="btn btn-md text-dark back-btn"><i class="fas fa-arrow-left">&nbsp;</i></a>
+    </div>
 <div class="row p-3">
     <div class="table-responsive">
         <table class="table table-striped table-sm text-center shadow-lg">

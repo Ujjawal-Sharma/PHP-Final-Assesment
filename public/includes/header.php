@@ -20,8 +20,3 @@
   <a class="ml-4 text-white btn" href="../front/index.php" style="font-size:25px;">
   <i class="fab fa-etsy"></i> •&nbsp;<small>xamEasy</small></a>
 </nav>
-<div class="conatiner col-md-8 bg-dark">
-<div class="d-flex justify-content-start mb-4 mx-6 col-md-6">
-        <a href="javascript:history.back()" class="btn btn-md text-dark back-btn"><i class="fas fa-arrow-left">&nbsp;</i></a>
-    </div>
-    </div>

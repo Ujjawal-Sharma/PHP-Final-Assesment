@@ -68,7 +68,6 @@ function autoRefresh_div() {
 <div class="container d-flex justify-content-center">
     <div class="col-lg-10 d-flex justify-content-center">
   
-            
             <div class="row chat-window col-xs-5 col-md-4 mt-2 mb-2 float-left">
                 <div class="col-xs-12 col-md-12 cont-bg">
                     <div class="panel panel-default p-2">

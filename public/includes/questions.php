@@ -11,6 +11,11 @@ include_once 'header.php';
 include_once 'notifications.php';
 ?>
 <div class="container-fluid"> 
+<div class="conatiner col-md-8">
+<div class="d-flex justify-content-start mb-4 mx-6 col-md-6">
+        <a href="javascript:history.back()" class="btn btn-md text-dark back-btn"><i class="fas fa-arrow-left">&nbsp;</i></a>
+    </div>
+    </div>
 <div class="row p-3 table-cont">
     <div class="table-responsive">
         <table class="table table-striped table-sm text-center shadow">

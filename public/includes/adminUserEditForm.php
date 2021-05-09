@@ -11,6 +11,8 @@ $obj = new UsersTable();
 $obj1 = new Categories();
 
 $categories = $obj1->fetchAll();
+// print_r($categories);
+// die("here");
 $result = $obj->fetchSingleUser($id);
 
 $firstname = $result['firstname'];
@@ -103,19 +105,11 @@ $interests = $result['name'];
                       <!-- Interests -->
                       <div class="input-group col-lg-12 mb-4">
                         <select name="interests" class="form-select form-control" required>
-                            <option value="" disabled selected>Interests</option>
-                            <option value="Development" <?php if ($interests == 'Development') echo ' selected="selected"'; ?>>Development</option>
-                            <option value="Competitve Exams" <?php if ($interests == 'Competitve Exams') echo ' selected="selected"'; ?>>Competitve Exams</option>
-                            <option value="Languages" <?php if ($interests == 'Languages') echo ' selected="selected"'; ?>>Languages</option>
-                            <option value="Competitve Programming" <?php if ($interests == 'Competitve Programming') echo ' selected="selected"'; ?>>Competitve Programming</option>
-                        </select>
-                        <select name="interests" class="form-select form-control" required>
                             <option value="" disabled>Interests</option>
-                            <?php foreach($categories as $cat){
-                                    foreach($cat as $c) { ?>
-                                        <option value="<?php echo $c; ?>"
-                                        <?php if ($interests == $c) echo ' selected="selected"'; ?>><?php echo $c; ?></option>
-                            <?php }} ?>
+                            <?php foreach($categories as $cat){ ?>
+                                        <option value="<?php echo $cat['category']; ?>"
+                                        <?php if ($interests == $cat['category']) echo ' selected="selected"'; ?>><?php echo $cat['category']; ?></option>
+                            <?php } ?>
                         </select>
                     </div>
 

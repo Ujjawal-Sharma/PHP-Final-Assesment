@@ -7,16 +7,14 @@ $obj = new Questions();
 
 $categories = $obj1->fetchAll();
 $rows = $obj->fetchQuestionsForQ();
-// foreach($rows as $row){
-// // foreach($row as $r){
-// echo "<pre>";
-// print_r($row['id']);
-// // }
-// }
-// die("here");
+
 include_once 'header.php';
 ?>
 <div class="container-fluid col-md-10"> 
+
+<div class="d-flex justify-content-start mb-4 mx-6 col-md-6">
+        <a href="javascript:history.back()" class="btn btn-md text-dark back-btn"><i class="fas fa-arrow-left">&nbsp;</i></a>
+    </div>
 
 <form action="../backend/uploadQuestionaire.php" method="POST">
 
